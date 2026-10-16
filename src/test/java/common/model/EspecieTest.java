@@ -1,6 +1,7 @@
 package common.model;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -21,5 +22,17 @@ class EspecieTest {
             identificadores.add(especie.consultaIdentificador());
         }
         assertEquals(Especie.values().length, identificadores.size());
+    }
+
+    @Test
+    void sePuedeBuscarUnaEspeciePorSuIdentificador() {
+        assertEquals(Especie.JAGUAR, Especie.consultaPorIdentificador("jaguar"));
+        assertEquals(Especie.RANA_OJOS_ROJOS, Especie.consultaPorIdentificador("rana_ojos_rojos"));
+    }
+
+    @Test
+    void unIdentificadorQueNoExisteDevuelveNull() {
+        assertNull(Especie.consultaPorIdentificador("dragon"));
+        assertNull(Especie.consultaPorIdentificador(null));
     }
 }
