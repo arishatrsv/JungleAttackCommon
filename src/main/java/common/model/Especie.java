@@ -26,6 +26,15 @@ public enum Especie { // un enum tiene un conjunto fijo de valores
         this.efectoVisual = efectoVisual;
     }
 
+    public static Especie consultaPorIdentificador(String identificador) {
+        for (Especie especie : values()) {
+            if (especie.identificador.equals(identificador)) {
+                return especie;
+            }
+        }
+        return null;
+    }
+
     public String consultaIdentificador() { 
         return identificador; }
     public String consultaImagen() { 
