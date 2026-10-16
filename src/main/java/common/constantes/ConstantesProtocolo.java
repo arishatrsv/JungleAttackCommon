@@ -31,6 +31,14 @@ public class ConstantesProtocolo {
     public static final String CAMPO_APODO = "apodo";
     public static final String CAMPO_CODIGO = "codigo";
     public static final String CAMPO_MOTIVO = "motivo";
+    public static final String CAMPO_ESPECIE = "especie";
+    public static final String CAMPO_DISPONIBLES = "disponibles";
+    public static final String CAMPO_PROPIA = "propia";
+    public static final String CAMPO_OPONENTE = "oponente";
+    public static final String CAMPO_COMPLETA = "completa";
+
+    // Separador de las listas de especies
+    public static final String SEPARADOR_LISTA = ",";
 
     // Motivos de error
     public static final String MOTIVO_TIPO_DESCONOCIDO = "TIPO_DESCONOCIDO";
@@ -38,6 +46,13 @@ public class ConstantesProtocolo {
     public static final String MOTIVO_APODO_INVALIDO = "APODO_INVALIDO";
     public static final String MOTIVO_SERVIDOR_LLENO = "SERVIDOR_LLENO";
     public static final String MOTIVO_YA_EN_PARTIDA = "YA_EN_PARTIDA";
+    public static final String MOTIVO_PARTIDA_NO_ENCONTRADA = "PARTIDA_NO_ENCONTRADA";
+    public static final String MOTIVO_PARTIDA_LLENA = "PARTIDA_LLENA";
+    public static final String MOTIVO_FASE_INCORRECTA = "FASE_INCORRECTA";
+    public static final String MOTIVO_ESPECIE_INVALIDA = "ESPECIE_INVALIDA";
+    public static final String MOTIVO_ESPECIE_NO_DISPONIBLE = "ESPECIE_NO_DISPONIBLE";
+    public static final String MOTIVO_ESPECIE_YA_ELEGIDA = "ESPECIE_YA_ELEGIDA";
+    public static final String MOTIVO_OPONENTE_DESCONECTADO = "OPONENTE_DESCONECTADO";
     public static final String MOTIVO_SIN_CONEXION = "SIN_CONEXION";//lo genera el propio cliente cuando no logra conectarse
 
     private ConstantesProtocolo() {
