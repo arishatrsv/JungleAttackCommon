@@ -40,6 +40,24 @@ public class ConstantesProtocolo {
     // Separador de las listas de especies
     public static final String SEPARADOR_LISTA = ",";
 
+    // Campos del contenido de GAME_STARTED (estos sí viajan con tipos reales de JSON: números, listas y objetos)
+    public static final String CAMPO_ZONA_INICIAL = "zonaInicial";
+    public static final String CAMPO_ZONAS_VISIBLES = "zonasVisibles";
+    public static final String CAMPO_DANIO = "danio";
+    public static final String CAMPO_ANIMALES = "animales";
+    public static final String CAMPO_TAZAS = "tazas";
+    public static final String CAMPO_BANDERAS = "banderas";
+
+    // Campos de cada animal, taza o bandera dentro de esas listas
+    public static final String CAMPO_ID = "id";
+    public static final String CAMPO_ENERGIA = "energia";
+    public static final String CAMPO_ENERGIA_MAXIMA = "energiaMaxima";
+    public static final String CAMPO_X = "x";
+    public static final String CAMPO_Y = "y";
+    public static final String CAMPO_ZONA = "zona";
+    public static final String CAMPO_ES_PROPIO = "esPropio";
+    public static final String CAMPO_ES_BOT = "esBot";
+
     // Motivos de error
     public static final String MOTIVO_TIPO_DESCONOCIDO = "TIPO_DESCONOCIDO";
     public static final String MOTIVO_MENSAJE_INVALIDO = "MENSAJE_INVALIDO";
