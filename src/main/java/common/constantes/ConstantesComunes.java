@@ -6,6 +6,10 @@ package common.constantes;
  */
 public class ConstantesComunes {
 
+    // Velocidad constante de los animales, en unidades de mapa.json por segundo.
+    // El servidor la usa para mover los animales y el cliente para suavizar lo que dibuja.
+    public static final double ANIMAL_SPEED = 60.0;
+
     // Nombre del archivo del mapa dentro de los recursos de common.
     public static final String RECURSO_MAPA = "mapa.json";
 

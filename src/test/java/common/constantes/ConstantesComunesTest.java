@@ -44,4 +44,9 @@ class ConstantesComunesTest {
         assertEquals(12, mapa.split("\"" + ConstantesComunes.ZONA_NOMBRE + "\"", -1).length - 1);
         assertEquals(15, mapa.split("\"" + ConstantesComunes.CAMINO_DESDE + "\"", -1).length - 1);
     }
+
+    @Test
+    void laVelocidadDeLosAnimalesEsPositiva() {
+        assertTrue(ConstantesComunes.ANIMAL_SPEED > 0);
+    }
 }

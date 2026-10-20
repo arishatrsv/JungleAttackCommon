@@ -48,6 +48,10 @@ public class ConstantesProtocolo {
     public static final String CAMPO_TAZAS = "tazas";
     public static final String CAMPO_BANDERAS = "banderas";
 
+    // Campos de MOVE_ANIMALS (el cliente los manda como texto, igual que los mensajes del lobby):
+    // los identificadores de los animales separados por comas, y el destino en las coordenadas de mapa.json.
+    public static final String CAMPO_IDS_ANIMALES = "idsAnimales";
+
     // Campos de cada animal, taza o bandera dentro de esas listas
     public static final String CAMPO_ID = "id";
     public static final String CAMPO_ENERGIA = "energia";
@@ -71,6 +75,8 @@ public class ConstantesProtocolo {
     public static final String MOTIVO_ESPECIE_NO_DISPONIBLE = "ESPECIE_NO_DISPONIBLE";
     public static final String MOTIVO_ESPECIE_YA_ELEGIDA = "ESPECIE_YA_ELEGIDA";
     public static final String MOTIVO_OPONENTE_DESCONECTADO = "OPONENTE_DESCONECTADO";
+    public static final String MOTIVO_ANIMAL_INVALIDO = "ANIMAL_INVALIDO"; // un animal no existe, no es del jugador o está muerto
+    public static final String MOTIVO_DESTINO_INVALIDO = "DESTINO_INVALIDO"; // el destino no es un punto del mapa
     public static final String MOTIVO_SIN_CONEXION = "SIN_CONEXION";//lo genera el propio cliente cuando no logra conectarse
 
     private ConstantesProtocolo() {
