@@ -47,6 +47,7 @@ public class ConstantesProtocolo {
     public static final String CAMPO_ANIMALES = "animales";
     public static final String CAMPO_TAZAS = "tazas";
     public static final String CAMPO_BANDERAS = "banderas";
+    public static final String CAMPO_TAZAS_CONSUMIDAS = "tazasConsumidas"; // cuántas tazas ha consumido el propio jugador
 
     // Campos de MOVE_ANIMALS (el cliente los manda como texto, igual que los mensajes del lobby):
     // los identificadores de los animales separados por comas, y el destino en las coordenadas de mapa.json.
