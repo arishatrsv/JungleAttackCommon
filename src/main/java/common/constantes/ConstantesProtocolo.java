@@ -1,9 +1,7 @@
 package common.constantes;
 
-/**
- * Constantes del protocolo de comunicación entre el cliente y el servidor.
- * Ambos utilizan los mismos valores para identificar los mensajes.
- */
+//Constantes del protocolo de comunicación entre el cliente y el servidor.
+//Ambos utilizan los mismos valores para identificar los mensajes.
 public class ConstantesProtocolo {
 
     // Cliente -> servidor
@@ -48,10 +46,21 @@ public class ConstantesProtocolo {
     public static final String CAMPO_TAZAS = "tazas";
     public static final String CAMPO_BANDERAS = "banderas";
     public static final String CAMPO_TAZAS_CONSUMIDAS = "tazasConsumidas"; // cuántas tazas ha consumido el propio jugador
+    public static final String CAMPO_BOTS_ELIMINADOS = "botsEliminados"; // cuántos bots ha eliminado el propio jugador
+    public static final String CAMPO_EVENTOS = "eventos"; // ataques y muertes recientes, para mostrar los efectos
 
     // Campos de MOVE_ANIMALS (el cliente los manda como texto, igual que los mensajes del lobby):
     // los identificadores de los animales separados por comas, y el destino en las coordenadas de mapa.json.
     public static final String CAMPO_IDS_ANIMALES = "idsAnimales";
+
+    //Campos de ATTACK: los animales que atacan y el animal atacado.
+    public static final String CAMPO_OBJETIVO = "objetivo";
+
+    //Campos de cada evento dentro de CAMPO_EVENTOS. 
+    public static final String CAMPO_TIPO_EVENTO = "tipoEvento";
+    public static final String CAMPO_ATACANTE = "atacante";
+    public static final String EVENTO_ATAQUE = "ATAQUE";
+    public static final String EVENTO_MUERTE = "MUERTE";
 
     // Campos de cada animal, taza o bandera dentro de esas listas
     public static final String CAMPO_ID = "id";
@@ -76,9 +85,11 @@ public class ConstantesProtocolo {
     public static final String MOTIVO_ESPECIE_NO_DISPONIBLE = "ESPECIE_NO_DISPONIBLE";
     public static final String MOTIVO_ESPECIE_YA_ELEGIDA = "ESPECIE_YA_ELEGIDA";
     public static final String MOTIVO_OPONENTE_DESCONECTADO = "OPONENTE_DESCONECTADO";
-    public static final String MOTIVO_ANIMAL_INVALIDO = "ANIMAL_INVALIDO"; // un animal no existe, no es del jugador o está muerto
-    public static final String MOTIVO_DESTINO_INVALIDO = "DESTINO_INVALIDO"; // el destino no es un punto del mapa
-    public static final String MOTIVO_SIN_CONEXION = "SIN_CONEXION";//lo genera el propio cliente cuando no logra conectarse
+    public static final String MOTIVO_ANIMAL_INVALIDO = "ANIMAL_INVALIDO"; //un animal no existe, no es del jugador o está muerto
+    public static final String MOTIVO_DESTINO_INVALIDO = "DESTINO_INVALIDO"; //el destino no es un punto del mapa
+    public static final String MOTIVO_OBJETIVO_INVALIDO = "OBJETIVO_INVALIDO"; //el animal atacado no existe, ya murió, es propio o no se ve
+    public static final String MOTIVO_FUERA_DE_ALCANCE = "FUERA_DE_ALCANCE"; //ningún animal elegido está cerca del objetivo
+    public static final String MOTIVO_SIN_CONEXION = "SIN_CONEXION"; //lo genera el propio cliente cuando no logra conectarse
 
     private ConstantesProtocolo() {
     }

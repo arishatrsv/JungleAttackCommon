@@ -49,4 +49,10 @@ class ConstantesComunesTest {
     void laVelocidadDeLosAnimalesEsPositiva() {
         assertTrue(ConstantesComunes.ANIMAL_SPEED > 0);
     }
+
+    @Test
+    void elRadioDeEncuentroYLaEnergiaMaximaSonPositivos() {
+        assertTrue(ConstantesComunes.ENCOUNTER_RADIUS > 0);
+        assertEquals(20, ConstantesComunes.MAX_PLAYER_ENERGY);
+    }
 }

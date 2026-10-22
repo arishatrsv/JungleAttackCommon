@@ -1,19 +1,24 @@
 package common.constantes;
 
-/**
- * Constantes que deben tener el mismo valor en el cliente y en el servidor.
- * Por ahora contiene todo lo necesario para leer el mapa (mapa.json) de la misma forma en ambos lados.
- */
+//Constantes que deben tener el mismo valor en el cliente y en el servidor.
+//Por ahora contiene todo lo necesario para leer el mapa (mapa.json) de la misma forma en ambos lados.
 public class ConstantesComunes {
 
     // Velocidad constante de los animales, en unidades de mapa.json por segundo.
     // El servidor la usa para mover los animales y el cliente para suavizar lo que dibuja.
     public static final double ANIMAL_SPEED = 60.0;
 
-    // Nombre del archivo del mapa dentro de los recursos de common.
+    //Distancia a la que dos animales se encuentran, un ataque solo alcanza
+    //a un animal que esté a esta distancia o menos del atacante.
+    public static final double ENCOUNTER_RADIUS = 40.0;
+
+    //Energía máxima de un animal de jugador
+    public static final int MAX_PLAYER_ENERGY = 20;
+
+    //Nombre del archivo del mapa dentro de los recursos de common.
     public static final String RECURSO_MAPA = "mapa.json";
 
-    // Campos de mapa.json: el mapa completo.
+    //Campos de mapa.json: el mapa completo.
     public static final String MAPA_ANCHO = "ancho";
     public static final String MAPA_ALTO = "alto";
     public static final String MAPA_ZONAS = "zonas";
