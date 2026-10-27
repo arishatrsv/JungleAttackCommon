@@ -105,6 +105,7 @@ public class ConstantesProtocolo {
     public static final String MOTIVO_OBJETIVO_INVALIDO = "OBJETIVO_INVALIDO"; // el animal atacado no existe, ya murió, es propio o no se ve
     public static final String MOTIVO_FUERA_DE_ALCANCE = "FUERA_DE_ALCANCE"; // ningún animal elegido está cerca del objetivo
     public static final String MOTIVO_SIN_CONEXION = "SIN_CONEXION";//lo genera el propio cliente cuando no logra conectarse
+    public static final String MOTIVO_ERROR_INTERNO = "ERROR_INTERNO"; // un comando falló dentro del servidor; el cliente sigue conectado
 
     private ConstantesProtocolo() {
     }

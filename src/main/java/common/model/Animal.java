@@ -10,9 +10,9 @@ public class Animal {
     // Identificador único del animal dentro de la partida.
     private String identificador;
 
-    private int energia;
-
-    private boolean vivo;
+    // volatile: los hilos de las zonas escriben estos campos y otros hilos los leen sin tomar el candado del animal.
+    private volatile int energia;
+    private volatile boolean vivo;
 
     // Posición actual del animal en el mapa.
     private Punto posicion;
