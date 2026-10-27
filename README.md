@@ -164,7 +164,7 @@ classDiagram
     }
 
     class Especie {
-        <<enumeration>>
+        <<enum>>
         JAGUAR
         PEREZOSO
         MONO_CARABLANCA
